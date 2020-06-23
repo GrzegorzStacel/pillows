@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #6A6A73;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  text-align: center;
+  padding: .8em 1.2em;
+}
+
+.logo {
+  width: 130px;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+img {
+  width: 90%;
+}
+
+header {
+  background-color: #B8B8BF;
+}
+
+header .bam {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+header .bam .logo {
+  width: 50px;
+}
+
+header .bam .logo-caption {
+  font-size: 0.8em;
+  font-weight: bold;
+  background: #3B3A40;
+  color: #BF8034;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+header .bam .menu {
+  width: 30px;
+}
+
+header ul {
+  position: fixed;
+  width: 60%;
+  top: 0;
+  right: 0;
+  text-align: left;
+  background: #24292c;
+  height: 100%;
+  z-index: 7;
+  padding-top: 3em;
+  margin: 0px;
+}
+
+header ul a {
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 1em 2em;
+  background: #343b3f;
+}
+
+header ul a:hover {
+  background: #41494e;
+}
+
+header .exit-btn {
+  margin-bottom: 1em;
+  margin-top: -1.3em;
+  text-align: right;
+  padding: 0 1.4em;
+}
+
+header .exit-btn img {
+  width: 15px;
+  cursor: pointer;
+}
+
+header .pic-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+header .pic-container img {
+  width: 180%;
+  position: relative;
+  left: -40px;
+}
+
+header .btn-container {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+}
+
+header .btn-container .btn-main {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  padding: 0;
+  border: 1px solid #3B3A40;
+  background-color: #B8B8BF;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+article {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+}
+
+article img {
+  position: absolute;
+  width: 230%;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+article h1 {
+  position: relative;
+  color: #BF8034;
+  z-index: 1;
+  text-align: center;
+  text-decoration: underline;
+  margin: 0;
+  padding-top: 50px;
+  font-size: 1.2em;
+}
+
+article p {
+  text-align: left;
+  color: white;
+  font-size: 0.7em;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin: 0;
+  line-height: 21px;
+}
+/*# sourceMappingURL=main.css.map */
