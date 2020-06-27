@@ -280,7 +280,6 @@ article p {
   background-color: #eba147;
   -webkit-box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15), 0 2px 2px 0 rgba(191, 128, 52, 0.6);
           box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15), 0 2px 2px 0 rgba(191, 128, 52, 0.6);
-  border: 1px solid #000000;
 }
 
 .contact-form .inputField {
@@ -396,5 +395,37 @@ footer:before {
 
 footer a {
   font-weight: bold;
+}
+
+.arrow {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px);
+  z-index: 1000;
+}
+
+.arrow i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #B8B8BF;
+  font-size: 40px;
+  background: transparent;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.arrow i:hover {
+  color: #BF8034;
+  font-size: 38px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

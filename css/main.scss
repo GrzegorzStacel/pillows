@@ -292,7 +292,6 @@ article {
                 0 20px 30px 0 rgba($color-orange, .1),
                 0 4px 4px 0 rgba($color-orange, .15),
                 0 2px 2px 0 rgba($color-orange, .6);
-            border: 1px solid $color-black;
         }
     }
 
@@ -319,7 +318,6 @@ article {
             border: 1px solid $color-gray;
         }
 
-
         .focus {
             top: 15px;
             font-size: 0.9em;
@@ -328,13 +326,10 @@ article {
             input[type="text"] {
                 background: url(none);
                 background: url();
-                // background: none;
                 height: 100px;
-
             }
         }
     }
-
 }
 
 input:-webkit-autofill,
@@ -407,7 +402,31 @@ footer {
         z-index: 0;
     }
 
-    a{
+    a {
         font-weight: bold;
+    }
+}
+
+.arrow {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transform: translateY(200px);
+    z-index: 1000;
+
+    i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-light-gray;
+        font-size: 40px;
+        background: transparent;
+        transition: 0.1s;
+
+        &:hover {
+            color: $color-orange;
+            font-size: 38px;
+            cursor: pointer;
+        }
     }
 }

@@ -1,6 +1,7 @@
 $(document).ready(function () {
     input_filleed();
     sendingMail();
+    ArrowBtnGoToTop();
 });
 
 var menu = document.getElementById('menu');
@@ -83,4 +84,25 @@ function sendingMail() {
 
         e.preventDefault();
     })
+}
+
+function ArrowBtnGoToTop() {
+    $(window).scroll(function () {
+        if ((document.documentElement.scrollTop || document.body.scrollTop) < 100) {
+            $('.arrow').css({
+                'transform': 'translateY(200px)',
+            });
+        } else {
+            $('.arrow').css({
+                'transform': 'translateY(0)',
+                'transition': '1.2s'
+            });
+        }
+    });
+
+    $('.arrow').on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 200, 'linear');
+    });
 }
