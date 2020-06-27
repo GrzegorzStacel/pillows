@@ -68,12 +68,8 @@ header .bam .logo {
 }
 
 header .bam .logo-caption {
-  font-size: 0.8em;
+  font-size: 1.1em;
   font-weight: bold;
-  background: #3B3A40;
-  color: #BF8034;
-  padding: 10px 20px;
-  border-radius: 50px;
 }
 
 header .bam .menu {
@@ -394,7 +390,11 @@ footer:before {
   background: black;
   position: absolute;
   right: 0;
-  bottom: 40px;
+  bottom: 50px;
   z-index: 0;
+}
+
+footer a {
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

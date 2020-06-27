@@ -11,10 +11,12 @@ body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     background-color: $color-gray;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+    color: $color-light-gray;
 }
 
 ul,
@@ -24,7 +26,8 @@ ol {
 
 .container {
     text-align: center;
-    padding: .8em 1.2em;
+    // padding: .8em 1.2em;
+    padding: 0px 1.2em;
 }
 
 .logo {
@@ -33,6 +36,17 @@ ol {
 
 .hide-mobile {
     display: none;
+}
+
+h1 {
+    position: relative;
+    color: $color-orange;
+    z-index: 1;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+    padding-top: 50px;
+    font-size: 1.2em;
 }
 
 //TODO usunąć 
@@ -50,18 +64,16 @@ header {
         justify-content: space-between;
         align-items: center;
         border-bottom: 1px solid #000;
+        padding: .8em 1.2em;
+
 
         .logo {
             width: 50px;
         }
 
         .logo-caption {
-            font-size: 0.8em;
+            font-size: 1.1em;
             font-weight: bold;
-            background: $color-dark;
-            color: $color-orange;
-            padding: 10px 20px;
-            border-radius: 50px;
         }
 
         .menu {
@@ -138,6 +150,7 @@ article {
     position: relative;
     background: #000;
     overflow: hidden;
+
     img {
         position: absolute;
         width: 230%;
@@ -146,18 +159,9 @@ article {
     }
 
 
-    h1 {
-        position: relative;
-        color: $color-orange;
-        z-index: 1;
-        text-align: center;
-        text-decoration: underline;
-        margin: 0;
-        padding-top: 50px;
-        font-size: 1.2em;
-    }
 
-    p{
+
+    p {
         text-align: left;
         color: white;
         font-size: 0.7em;
@@ -165,5 +169,245 @@ article {
         padding-bottom: 50px;
         margin: 0;
         line-height: 21px;
+    }
+}
+
+.box {
+    margin-top: 60px;
+    padding-bottom: 60px;
+    background-color: $color-dark;
+    border-radius: 45px 0 45px 0;
+    border-top: 2px solid $color-orange;
+    border-bottom: 2px solid $color-orange;
+}
+
+.box {
+
+    h1 {
+        font-size: 2em;
+    }
+
+    picture {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: block;
+        width: 90%;
+        text-align: center;
+
+        img {
+            vertical-align: top;
+            width: 100%;
+            border-radius: 15px;
+            border: 1px solid $color-orange;
+        }
+
+        &:first-of-type {
+            margin-top: 60px;
+        }
+
+
+    }
+}
+
+.contact-form {
+    position: relative;
+    z-index: 1;
+
+    .formMessage {
+        font-size: .8em;
+        width: 70%;
+        background: white;
+        display: inline-block;
+        border-radius: 50px;
+        font-weight: bold;
+        margin: 0 auto;
+    }
+
+    .formMessage.ok {
+        padding: 10px;
+        color: green;
+    }
+
+    .formMessage.error {
+        padding: 5px;
+        color: #ba3402;
+    }
+
+    .inputField:first-child {
+        margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 40px);
+        height: 30px;
+        padding: 10px 20px;
+        background-color: $color-dark;
+        border-radius: 10px;
+        border: none;
+        color: $color-gray;
+        margin-top: 35px;
+        background: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg">\
+        <rect rx="11" ry="11" width="100%" height="100%" style="stroke: \ orange; stroke-width: 3px; fill: none; \ stroke-dasharray: 10px 13px"></rect>  \
+        </svg>');
+        outline: none;
+        border: 2px;
+
+
+        &:focus {
+            border: 1px solid $color-orange !important;
+            color: $color-light-gray;
+            box-shadow:
+                0 20px 30px 0 rgba($color-orange, .1),
+                0 4px 4px 0 rgba($color-orange, .15);
+            background: none;
+            padding: 9px 19px;
+        }
+    }
+
+    textarea {
+        height: auto;
+    }
+
+    input[type="submit"] {
+        background: $color-orange;
+        color: $color-dark;
+        font-size: 2em;
+        border-radius: 50px;
+        width: calc(100% - 40px);
+        border: none;
+        height: 75px;
+        margin-top: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+        outline: none;
+        margin-bottom: 20px;
+
+        &:hover,
+        &:focus {
+            background-color: #eba147;
+            box-shadow:
+                0 20px 30px 0 rgba($color-orange, .1),
+                0 4px 4px 0 rgba($color-orange, .15),
+                0 2px 2px 0 rgba($color-orange, .6);
+            border: 1px solid $color-black;
+        }
+    }
+
+
+    .inputField {
+        position: relative;
+
+        label {
+            position: absolute;
+            z-index: 2;
+            top: 50px;
+            left: 20px;
+            color: gray;
+            transition: 0.3s;
+            font-size: 0.9em;
+        }
+
+        .filled {
+            background: $color-dark;
+            color: $color-orange;
+            box-shadow:
+                inset 0 0 0 1px rgba(255, 255, 255, 0),
+                inset 0 0 0 100px $color-dark;
+            border: 1px solid $color-gray;
+        }
+
+
+        .focus {
+            top: 15px;
+            font-size: 0.9em;
+            color: $color-gray;
+
+            input[type="text"] {
+                background: url(none);
+                background: url();
+                // background: none;
+                height: 100px;
+
+            }
+        }
+    }
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: $color-orange;
+}
+
+input:-internal-autofill-selected {
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0),
+        inset 0 0 0 100px $color-dark;
+}
+
+textarea,
+input,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.contact-box {
+    color: $color-light-gray;
+    font-size: 15px;
+    text-align: left;
+
+    .h2-size {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .change-color {
+        color: $color-orange;
+    }
+
+    .title-data-color {
+        color: $color-orange;
+        width: 60px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+}
+
+footer {
+    background: #000;
+    color: $color-light-gray;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+    position: relative;
+
+    &:before {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 100px;
+        background: black;
+        position: absolute;
+        right: 0;
+        bottom: 50px;
+        z-index: 0;
+    }
+
+    a{
+        font-weight: bold;
     }
 }
