@@ -142,6 +142,21 @@ header {
             font-size: 20px;
             text-transform: uppercase;
             letter-spacing: 1px;
+
+            &:hover{
+                background: $color-gray;
+                border: 2px inset #000;
+                text-decoration: underline;
+                
+                a{
+                    color: $color-orange;
+                }
+            }
+
+            a{
+                color: $color-dark;
+                font-weight: bold;
+            }
         }
     }
 }
@@ -407,26 +422,16 @@ footer {
     }
 }
 
-.arrow {
+svg {
+    fill: $color-light-gray;
     position: fixed;
     right: 20px;
     bottom: 20px;
     transform: translateY(200px);
     z-index: 1000;
-
-    i {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $color-light-gray;
-        font-size: 40px;
-        background: transparent;
-        transition: 0.1s;
-
-        &:hover {
-            color: $color-orange;
-            font-size: 38px;
-            cursor: pointer;
-        }
-    }
+    
+    &:hover {
+        transition: 0.3s !important;
+        fill: $color-orange;
+  }
 }

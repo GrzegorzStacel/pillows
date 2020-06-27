@@ -146,6 +146,21 @@ header .btn-container .btn-main {
   letter-spacing: 1px;
 }
 
+header .btn-container .btn-main:hover {
+  background: #6A6A73;
+  border: 2px inset #000;
+  text-decoration: underline;
+}
+
+header .btn-container .btn-main:hover a {
+  color: #BF8034;
+}
+
+header .btn-container .btn-main a {
+  color: #3B3A40;
+  font-weight: bold;
+}
+
 article {
   position: relative;
   background: #000;
@@ -397,7 +412,8 @@ footer a {
   font-weight: bold;
 }
 
-.arrow {
+svg {
+  fill: #B8B8BF;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -406,26 +422,9 @@ footer a {
   z-index: 1000;
 }
 
-.arrow i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #B8B8BF;
-  font-size: 40px;
-  background: transparent;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-}
-
-.arrow i:hover {
-  color: #BF8034;
-  font-size: 38px;
-  cursor: pointer;
+svg:hover {
+  -webkit-transition: 0.3s !important;
+  transition: 0.3s !important;
+  fill: #BF8034;
 }
 /*# sourceMappingURL=main.css.map */
