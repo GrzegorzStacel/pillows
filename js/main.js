@@ -16,8 +16,6 @@ exit.addEventListener('click', function (e) {
     nav.classList.toggle('hide-mobile');
     e.preventDefault();
 });
-// $(document).ready(function () {
-
 
 function input_filleed() {
     // const input = document.querySelector('.inputField input');
