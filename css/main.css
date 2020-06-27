@@ -207,7 +207,7 @@ article p {
 
 .contact-form {
   position: relative;
-  margin-bottom: 20px;
+  z-index: 1;
 }
 
 .contact-form .formMessage {
@@ -367,5 +367,34 @@ select {
   width: 60px;
   margin-top: 15px;
   display: inline-block;
+}
+
+footer {
+  background: #000;
+  color: #B8B8BF;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.8em;
+  position: relative;
+}
+
+footer:before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  z-index: 0;
 }
 /*# sourceMappingURL=main.css.map */
