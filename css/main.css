@@ -524,4 +524,13 @@ svg:hover {
   font-weight: bold;
   text-align: left;
 }
+
+.about p {
+  color: white;
+  font-size: 0.9em;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-top: 50px;
+}
 /*# sourceMappingURL=main.css.map */
