@@ -314,9 +314,9 @@ article {
         color: $color-dark;
         font-size: 2em;
         border-radius: 50px;
-        width: calc(100% - 40px);
+        width: calc(100% - 50px);
         border: none;
-        height: 75px;
+        height: 60px;
         margin-top: 30px;
         text-transform: uppercase;
         font-weight: bold;
@@ -486,7 +486,7 @@ svg {
         background: $color-gray;
         border-radius: 15px;
         border: 1px solid $color-orange;
-        transition: 1s;
+        transition: 0.3s;
         margin-bottom: 30px;
         padding-bottom: 30px;
 
