@@ -36,8 +36,9 @@
         </div>
 
         <picture class="pic-container">
-            <!-- <source type="image/webp" srcset="img/main/front.webp"> TODO przekonwertować na webp -->
-            <source type="image/jpg" srcset="img/main/front.jpg">
+            <source type="image/jpg" srcset="img/main/front_w800.jpg" media="(max-width: 800px)">
+            <source type="image/jpg" srcset="img/main/front_w1200.jpg" media="(max-width: 1200px)">
+            <source type="image/jpg" srcset="img/main/front_w1920.jpg">
             <img src="img/main/front.jpg" alt="Poduszki na łóżku">
         </picture>
 
@@ -53,9 +54,17 @@
 
     <article>
         <picture>
-            <!-- <source type="image/webp" srcset="img/description/pillow_pik2.webp"> TODO przekonwertować na webp -->
-            <source type="image/jpg" srcset="img/description/pillow_pik2.jpg">
-            <img src="img/description/pillow_pik2.jpg" alt="Poduszki w tle">
+            <!-- Small -->
+            <source type="image/webp" srcset="img/description/pillow_pik_w1200.webp" media="(max-width: 1599px)">
+
+            <source type="image/jpg" srcset="img/description/pillow_pik_w1200.jpg" media="(max-width: 1599px)">
+
+            <!-- Large -->
+            <source type="image/webp" srcset="img/description/pillow_pik_w1920.webp" media="(min-width: 1600px)">
+
+            <source type="image/jpg" srcset="img/description/pillow_pik_w1920.jpg" media="(min-width: 1600px)">
+
+            <img srcset="img/description/pillow_pik_w1920.jpg" alt="Poduszki w tle" media="(min-width: 1600px)">
         </picture>
 
         <div class="container">
@@ -78,19 +87,19 @@
         <div class="container">
             <h1 class="title">NASZE PRODUKTY</h1>
             <picture>
-                <!-- <source type="image/webp" srcset="img/gallery/pillow_start_1.webp"> TODO przekonwertować na webp -->
-                <source type="image/jpg" srcset="img/gallery/pillow_start_1.jpg">
-                <img src="img/gallery/pillow_start_1.jpg" alt="Pikowane, białe poduszki na łóżku">
+                <source type="image/webp" srcset="img/gallery/pillow_start_1_w800.webp">
+                <source type="image/jpg" srcset="img/gallery/pillow_start_1_w800.jpg">
+                <img src="img/gallery/pillow_start_1_w800.jpg" alt="Pikowane, białe poduszki na łóżku">
             </picture>
             <picture>
-                <!-- <source type="image/webp" srcset="img/gallery/pillow_start_2.webp"> TODO przekonwertować na webp -->
-                <source type="image/jpg" srcset="img/gallery/pillow_start_2.jpg">
-                <img src="img/gallery/pillow_start_2.jpg" alt="Pikowane, białe i kremowe poduszki na łóżku">
+                <source type="image/webp" srcset="img/gallery/pillow_start_2_w800.webp">
+                <source type="image/jpg" srcset="img/gallery/pillow_start_2_w800.jpg">
+                <img src="img/gallery/pillow_start_2_w800.jpg" alt="Pikowane, białe i kremowe poduszki na łóżku">
             </picture>
             <picture>
-                <!-- <source type="image/webp" srcset="img/gallery/pillow_start_3.webp"> TODO przekonwertować na webp -->
-                <source type="image/jpg" srcset="img/gallery/pillow_start_3.jpg">
-                <img src="img/gallery/pillow_start_3.jpg" alt="Poduszki bez pokrowców na fotelu">
+                <source type="image/webp" srcset="img/gallery/pillow_start_3_w800.webp">
+                <source type="image/jpg" srcset="img/gallery/pillow_start_3_w800.jpg">
+                <img src="img/gallery/pillow_start_3_w800.jpg" alt="Poduszki bez pokrowców na fotelu">
             </picture>
         </div>
     </section>
