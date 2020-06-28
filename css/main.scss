@@ -448,3 +448,26 @@ svg {
         fill: $color-orange;
   }
 }
+
+.offer{
+
+    article{
+        background: $color-dark;
+    }
+    
+    h1{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    p{
+        color: $color-light-gray;
+        padding: 10px 0px 10px 0px;
+        font-size: 0.9em;
+
+        span{
+            color: $color-orange;
+            font-weight: bold;
+        }
+    }
+}

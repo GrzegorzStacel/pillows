@@ -438,4 +438,24 @@ svg:hover {
   transition: 0.3s !important;
   fill: #BF8034;
 }
+
+.offer article {
+  background: #3B3A40;
+}
+
+.offer h1 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.offer p {
+  color: #B8B8BF;
+  padding: 10px 0px 10px 0px;
+  font-size: 0.9em;
+}
+
+.offer p span {
+  color: #BF8034;
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */
