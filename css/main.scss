@@ -134,7 +134,7 @@ header {
         img {
             width: 180%;
             position: relative;
-            left: -40px;
+            left: -150px;
         }
     }
 
@@ -171,6 +171,15 @@ header {
                     color: $color-orange;
                 }
             }
+        }
+    }
+
+    
+    .start-img{
+        width: 100vw;
+
+        img{
+            width: 100%;
         }
     }
 }
@@ -479,6 +488,7 @@ svg {
         border: 1px solid $color-orange;
         transition: 1s;
         margin-bottom: 30px;
+        padding-bottom: 30px;
 
         &:hover{
             transform: scale(1.01);

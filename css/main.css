@@ -130,7 +130,7 @@ header .pic-container {
 header .pic-container img {
   width: 180%;
   position: relative;
-  left: -40px;
+  left: -150px;
 }
 
 header .btn-container {
@@ -170,6 +170,14 @@ header .btn-container .btn-main:hover {
 
 header .btn-container .btn-main:hover span {
   color: #BF8034;
+}
+
+header .start-img {
+  width: 100vw;
+}
+
+header .start-img img {
+  width: 100%;
 }
 
 article {
@@ -467,6 +475,7 @@ svg:hover {
   -webkit-transition: 1s;
   transition: 1s;
   margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .offer section:hover {
