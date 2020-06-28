@@ -135,7 +135,8 @@ header {
         height: 60px;
 
         .btn-main {
-            flex: 0 0 50%;
+            // flex: 0 0 50%;
+            flex-basis: 50%;
             border: 1px solid $color-dark;
             background-color: $color-light-gray;
             font-size: 20px;
