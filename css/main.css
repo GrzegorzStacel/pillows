@@ -94,11 +94,18 @@ header ul a {
   display: block;
   width: 100%;
   padding: 1em 2em;
-  background: #343b3f;
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
 
 header ul a:hover {
   background: #41494e;
+}
+
+header ul a.activ {
+  color: #BF8034;
+  text-decoration: underline;
 }
 
 header .exit-btn {

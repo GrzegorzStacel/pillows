@@ -98,10 +98,18 @@ header {
             display: block;
             width: 100%;
             padding: 1em 2em;
-            background: rgb(52, 59, 63);
-
+            // background: rgb(52, 59, 63);
+            font-size: 1.2em;
+            font-weight: bold;
+            letter-spacing: 5px;
             &:hover {
                 background: rgb(65, 73, 78);
+            }
+
+            &.activ{
+                color: $color-orange;
+                text-decoration: underline;
+                
             }
         }
     }
