@@ -4,18 +4,23 @@ $(document).ready(function () {
     ArrowBtnGoToTop();
 });
 
-var menu = document.getElementById('menu');
-var nav = document.getElementById('nav');
-var exit = document.getElementById('exit');
+const MENU = document.getElementById('menu');
+const NAV = document.getElementById('nav');
+const EXIT = document.getElementById('exit');
+const CONTACT = document.getElementById('contact');
 
-menu.addEventListener('click', function (e) {
-    nav.classList.toggle('hide-mobile');
+MENU.addEventListener('click', function (e) {
+ NAV.classList.toggle('hide-mobile');
     e.preventDefault();
 });
 
-exit.addEventListener('click', function (e) {
-    nav.classList.toggle('hide-mobile');
+EXIT.addEventListener('click', function (e) {
+ NAV.classList.toggle('hide-mobile');
     e.preventDefault();
+});
+
+CONTACT.addEventListener('click', function (e) {
+ NAV.classList.toggle('hide-mobile');
 });
 
 function input_filleed() {
