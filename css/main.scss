@@ -102,14 +102,15 @@ header {
             font-size: 1.2em;
             font-weight: bold;
             letter-spacing: 5px;
+
             &:hover {
                 background: rgb(65, 73, 78);
             }
 
-            &.activ{
+            &.activ {
                 color: $color-orange;
                 text-decoration: underline;
-                
+
             }
         }
     }
@@ -154,19 +155,19 @@ header {
             font-weight: bold;
             position: relative;
 
-            span{
+            span {
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(-50%, -50%);   
+                transform: translate(-50%, -50%);
             }
 
-            &:hover{
+            &:hover {
                 background: $color-gray;
                 border: 2px inset #000;
                 text-decoration: underline;
-                
-                span{
+
+                span {
                     color: $color-orange;
                 }
             }
@@ -442,32 +443,89 @@ svg {
     bottom: 20px;
     transform: translateY(200px);
     z-index: 1000;
-    
+
     &:hover {
         transition: 0.3s !important;
         fill: $color-orange;
-  }
+    }
 }
 
-.offer{
+.offer {
 
-    article{
+    article {
         background: $color-dark;
     }
-    
-    h1{
+
+    h1 {
         padding-top: 60px;
         padding-bottom: 60px;
     }
 
-    p{
+    p {
         color: $color-light-gray;
         padding: 10px 0px 10px 0px;
         font-size: 0.9em;
 
-        span{
+        span {
             color: $color-orange;
             font-weight: bold;
         }
     }
+
+    section {
+        margin-top: 60px;
+        background: $color-gray;
+        border-radius: 15px;
+        border: 1px solid $color-orange;
+        transition: 1s;
+        margin-bottom: 30px;
+
+        &:hover{
+            transform: scale(1.01);
+            box-shadow:
+                0 20px 30px 0 rgba($color-orange, .1),
+                0 4px 4px 0 rgba($color-orange, .15);
+        }
+
+        &:nth-last-child(1){
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: $color-orange;
+            letter-spacing: 2px;
+            margin: 30px auto 30px auto;
+        }
+
+        .offer-picture {
+            margin-top: auto;
+        }
+
+        .offer-box {
+            background: $color-light-gray;
+            margin: 15px;
+            border-radius: 15px;
+
+            &:first-of-type {
+                margin-top: 30px;
+            }
+
+            .title-offer{
+                text-align: left;
+                padding: 10px;
+                color: $color-dark;
+            }
+            
+            .property-offer{
+                color: $color-orange;
+                margin-left: 20%;
+                padding: 10px;
+                padding-top: 0;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    }
+
 }

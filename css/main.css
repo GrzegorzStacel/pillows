@@ -458,4 +458,61 @@ svg:hover {
   color: #BF8034;
   font-weight: bold;
 }
+
+.offer section {
+  margin-top: 60px;
+  background: #6A6A73;
+  border-radius: 15px;
+  border: 1px solid #BF8034;
+  -webkit-transition: 1s;
+  transition: 1s;
+  margin-bottom: 30px;
+}
+
+.offer section:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15);
+          box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15);
+}
+
+.offer section:nth-last-child(1) {
+  margin-top: 30px;
+}
+
+.offer section h2 {
+  font-size: 1.2em;
+  color: #BF8034;
+  letter-spacing: 2px;
+  margin: 30px auto 30px auto;
+}
+
+.offer section .offer-picture {
+  margin-top: auto;
+}
+
+.offer section .offer-box {
+  background: #B8B8BF;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.offer section .offer-box:first-of-type {
+  margin-top: 30px;
+}
+
+.offer section .offer-box .title-offer {
+  text-align: left;
+  padding: 10px;
+  color: #3B3A40;
+}
+
+.offer section .offer-box .property-offer {
+  color: #BF8034;
+  margin-left: 20%;
+  padding: 10px;
+  padding-top: 0;
+  font-weight: bold;
+  text-align: left;
+}
 /*# sourceMappingURL=main.css.map */
