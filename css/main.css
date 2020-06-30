@@ -41,10 +41,6 @@ h1 {
   font-size: 1.2em;
 }
 
-img {
-  width: 90%;
-}
-
 header {
   background-color: #B8B8BF;
 }
@@ -120,25 +116,12 @@ header .exit-btn img {
   cursor: pointer;
 }
 
-header .pic-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  overflow: hidden;
-}
-
-header .pic-container img {
-  width: 180%;
-  position: relative;
-  left: -150px;
-}
-
 header .btn-container {
   background: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
+  height: 10vh;
 }
 
 header .btn-container .btn-main {
@@ -177,23 +160,29 @@ header .start-img {
 }
 
 header .start-img img {
+  border-bottom: 2px solid #BF8034;
+  display: block;
   width: 100%;
 }
 
-article {
+.call {
   position: relative;
   background: #000;
   overflow: hidden;
+  margin-top: 60px;
+  border-top: 2px solid #BF8034;
+  border-bottom: 2px solid #BF8034;
+  padding-bottom: 50px;
 }
 
-article img {
+.call img {
   position: absolute;
-  width: 230%;
+  width: 300%;
   opacity: 0.3;
   z-index: 0;
 }
 
-article p {
+.call p {
   text-align: left;
   color: white;
   font-size: 0.7em;
@@ -201,6 +190,28 @@ article p {
   padding-bottom: 50px;
   margin: 0;
   line-height: 21px;
+  position: relative;
+}
+
+.call a {
+  background: #BF8034;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+  border-radius: 50px;
+  position: relative;
+  font-size: 1em;
+  display: inline-block;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.call a:hover {
+  -webkit-box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15);
+          box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  color: white;
 }
 
 .box {
@@ -468,13 +479,14 @@ svg:hover {
 
 .offer section {
   margin-top: 60px;
+  margin-bottom: 30px;
   background: #6A6A73;
   border-radius: 15px;
   border: 1px solid #BF8034;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin-bottom: 30px;
   padding-bottom: 30px;
+  padding: 0px 15px 30px 15px;
 }
 
 .offer section:hover {
@@ -501,7 +513,7 @@ svg:hover {
 
 .offer section .offer-box {
   background: #B8B8BF;
-  margin: 15px;
+  margin: 15px 0px;
   border-radius: 15px;
 }
 
@@ -525,11 +537,150 @@ svg:hover {
 }
 
 .about p {
-  color: white;
+  color: #B8B8BF;
   font-size: 0.9em;
   line-height: 20px;
   letter-spacing: 1px;
   text-align: left;
   margin-top: 50px;
+}
+
+@media only screen and (min-width: 375px) {
+  .call img {
+    width: 200%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .call h1 {
+    font-size: 1.5em;
+  }
+  .call img {
+    width: 190%;
+  }
+  .call p {
+    font-size: 0.9em;
+  }
+  .call a {
+    padding: 20px;
+  }
+  .container {
+    padding: 0 2.5em;
+  }
+  .contact-box {
+    font-size: 17px;
+  }
+  .contact-box .h2-size {
+    font-size: 22px;
+  }
+  .box {
+    padding-bottom: 60px !important;
+  }
+  .box h1 {
+    font-size: 2.2em;
+    padding-bottom: 20px;
+  }
+  .box picture {
+    width: 95%;
+  }
+  label {
+    font-size: 1.1em;
+  }
+  .offer p {
+    text-align: left;
+    font-size: 1em;
+  }
+  .offer section h2 {
+    font-size: 1.6em;
+    margin: 40px 15px;
+  }
+  .offer section .offer-box .title-offer {
+    font-size: 1.1em;
+  }
+  .offer section .offer-box .property-offer {
+    font-size: 1.2em;
+  }
+  .about p {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .box h1 {
+    font-size: 2.4em;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+  header .bam {
+    border-bottom: none;
+  }
+  header .bam .logo-caption {
+    font-size: 1.3em;
+  }
+  header ul {
+    width: 40%;
+  }
+  .box {
+    width: 100%;
+    margin: 60px 0px 0px 0px;
+    padding: 0;
+  }
+  .contact-box {
+    font-size: 19px;
+  }
+  .contact-box .h2-size {
+    padding: 30px;
+    font-size: 24px;
+  }
+  .contact-box .title-data-color {
+    width: 100px;
+  }
+  footer {
+    font-size: 0.9em;
+  }
+  .contact-form input[type="submit"] {
+    width: calc(100% - 300px);
+  }
+  .call {
+    padding-bottom: 80px;
+  }
+  .call h1 {
+    font-size: 2.5em;
+    padding: 80px 40px 40px 40px;
+    text-align: left;
+  }
+  .call p {
+    font-size: 1.2em;
+    padding: 40px 40px 80px;
+  }
+  .call img {
+    width: 130%;
+  }
+  .call a {
+    float: left;
+    margin-left: 40px;
+  }
+  .offer p {
+    font-size: 1.1em;
+  }
+  .offer section {
+    padding: 0 50px 50px;
+  }
+  .offer section h2 {
+    font-size: 2.1em;
+  }
+  .offer section .offer-box {
+    margin: 15px 40px;
+  }
+  .offer section .offer-box .title-offer {
+    font-size: 1.3em;
+  }
+  .offer section .offer-box .property-offer {
+    font-size: 1.4em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
