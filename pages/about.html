@@ -44,79 +44,83 @@
         </picture>
     </header>
 
-    <section class="container box about">
-        <h1>O NAS</h1>
-        <p>Jesteśmy małą polską firmą rodzinną działającą od 1996 roku w branży recyklingu włókienniczego.<br><br>
-            Wielu towarom odbieranych z różnych zakładów włókienniczych nadajemy drugie życie.
-            Dostarczamy towary do
-            produkcji kołder, poduszek oraz materacy.<br><br>
-            Od 2015 roku sami pozyskujemy wypełnienie do poduszek własnej
-            produkcji z pianki Pur.<br><br>
-            Pianka Pur jest produktem antyalergicznym, lekkim i doskonale sprawdza się w
-            produktach użytku domowego (materace, wózki, poduszki, łóżeczka).<br><br> 
-            Wypełnienie pianką Pur poduszek jest
-            ekologicznym sposobem na nadanie drugiego życia towarem włókienniczym a tym samym możemy wszyscy przyczynić
-            się do ochrony naszej planety.</p>
+    <section class="box about">
+        <div class="container">
+            <h1>O NAS</h1>
+            <p>Jesteśmy małą polską firmą rodzinną działającą od 1996 roku w branży recyklingu włókienniczego.<br><br>
+                Wielu towarom odbieranych z różnych zakładów włókienniczych nadajemy drugie życie.
+                Dostarczamy towary do
+                produkcji kołder, poduszek oraz materacy.<br><br>
+                Od 2015 roku sami pozyskujemy wypełnienie do poduszek własnej
+                produkcji z pianki Pur.<br><br>
+                Pianka Pur jest produktem antyalergicznym, lekkim i doskonale sprawdza się w
+                produktach użytku domowego (materace, wózki, poduszki, łóżeczka).<br><br> 
+                Wypełnienie pianką Pur poduszek jest
+                ekologicznym sposobem na nadanie drugiego życia towarem włókienniczym a tym samym możemy wszyscy przyczynić
+                się do ochrony naszej planety.</p>
+        </div>
     </section>
 
-    <section class="contact-form container box" id="contact-label">
-        <h1 class="title">Kontakt</h1>
-        <div>
-            <form action="php/mail.php" method="post" id="form1">
-                <div class="inputField">
-                    <label for="_name">Imię i nazwisko</label>
-                    <input type="text" name="_name" id="_name">
-                </div>
-                <div class="inputField">
-                    <label for="_email">Adres e-mail</label>
-                    <input type="email" name="_email" id="_email">
-                </div>
-                <div class="inputField">
-                    <label for="_phone">Tel. kontaktowy</label>
-                    <input type="text" name="_phone" id="_phone">
-                </div>
-                <div class="inputField">
-                    <label for="_query">Wiadomość</label>
-                    <textarea rows="10" name="_query" id="_query"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="wyślij" class="send">
-                </div>
-                <div class="formMessage">
-                    <!-- Wstawiany tekst z js'a o powodzeniu lub wystąpieniu błędu podczas wysyłania wiadomości -->
-                </div>
-            </form>
-        </div>
-
-        <div class="contact-box" itemscope itemtype="http://schema.org/LocalBusiness">
-            <h2 class="h2-size"><span itemprop="name">Firma produkcyjno handlowa <span class="change-color">Trans-Tex
-                        Bis</span> Renata Gaudy</span></h2>
-            <div>
-                <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <div class="address">
-                        <span class="title-data-color">Adres:</span>
-
-                        <a href="https://www.google.com/maps/place/%C5%81uszczyn+22,+42-244+%C5%81uszczyn/@50.8402335,19.3471348,105m/data=!3m1!1e3!4m5!3m4!1s0x47174c6c59b73d1f:0xd94437f9cf42b943!8m2!3d50.8402619!4d19.347293"
-                            target="_blank" rel="noopener noreferrer">
-                            <span itemprop="postalCode">42-244</span>
-                            <span itemprop="addressLocality">Mstów</span>
-                            <span itemprop="streetAddress">Łuszczyn 22</span>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <div class="telephone">
-                        <span class="title-data-color">Tel:</span>
-                        <a href="tel:+48-608-624-650" itemprop="telephone">+48-608-624-650</a>
-                    </div>
-                </div>
-                <div>
-                    <div class="email">
-                        <span class="title-data-color">E-mail:</span>
-                        <a href="mailto:ryszardgaudy@gmail.com" itemprop="email">ryszardgaudy@gmail.com</a>
-                    </div>
-                </div>
-            </div>
+    <section class="contact-form box" id="contact-label">
+        <div class="container">
+        	<h1 class="title">Kontakt</h1>
+        	<div>
+        	    <form action="php/mail.php" method="post" id="form1">
+        	        <div class="inputField">
+        	            <label for="_name">Imię i nazwisko</label>
+        	            <input type="text" name="_name" id="_name">
+        	        </div>
+        	        <div class="inputField">
+        	            <label for="_email">Adres e-mail</label>
+        	            <input type="email" name="_email" id="_email">
+        	        </div>
+        	        <div class="inputField">
+        	            <label for="_phone">Tel. kontaktowy</label>
+        	            <input type="text" name="_phone" id="_phone">
+        	        </div>
+        	        <div class="inputField">
+        	            <label for="_query">Wiadomość</label>
+        	            <textarea rows="10" name="_query" id="_query"></textarea>
+        	        </div>
+        	        <div>
+        	            <input type="submit" value="wyślij" class="send">
+        	        </div>
+        	        <div class="formMessage">
+        	            <!-- Wstawiany tekst z js'a o powodzeniu lub wystąpieniu błędu podczas wysyłania wiadomości -->
+        	        </div>
+        	    </form>
+        	</div>
+        
+        	<div class="contact-box" itemscope itemtype="http://schema.org/LocalBusiness">
+        	    <h2 class="h2-size"><span itemprop="name">Firma produkcyjno handlowa <span class="change-color">Trans-Tex
+        	                Bis</span> Renata Gaudy</span></h2>
+        	    <div>
+        	        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        	            <div class="address">
+        	                <span class="title-data-color">Adres:</span>
+        
+        	                <a href="https://www.google.com/maps/place/%C5%81uszczyn+22,+42-244+%C5%81uszczyn/@50.8402335,19.3471348,105m/data=!3m1!1e3!4m5!3m4!1s0x47174c6c59b73d1f:0xd94437f9cf42b943!8m2!3d50.8402619!4d19.347293"
+        	                    target="_blank" rel="noopener noreferrer">
+        	                    <span itemprop="postalCode">42-244</span>
+        	                    <span itemprop="addressLocality">Mstów</span>
+        	                    <span itemprop="streetAddress">Łuszczyn 22</span>
+        	                </a>
+        	            </div>
+        	        </div>
+        	        <div>
+        	            <div class="telephone">
+        	                <span class="title-data-color">Tel:</span>
+        	                <a href="tel:+48-608-624-650" itemprop="telephone">+48-608-624-650</a>
+        	            </div>
+        	        </div>
+        	        <div>
+        	            <div class="email">
+        	                <span class="title-data-color">E-mail:</span>
+        	                <a href="mailto:ryszardgaudy@gmail.com" itemprop="email">ryszardgaudy@gmail.com</a>
+        	            </div>
+        	        </div>
+        	    </div>
+        	</div>
         </div>
     </section>
 
