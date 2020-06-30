@@ -397,7 +397,7 @@ select {
 
 .contact-box {
     color: $color-light-gray;
-    font-size: 15px;
+    font-size: 13px;
     text-align: left;
 
     .h2-size {
@@ -501,10 +501,11 @@ svg {
         }
 
         h2 {
+            
             font-size: 1.2em;
             color: $color-orange;
             letter-spacing: 2px;
-            margin: 30px auto 30px auto;
+            margin: 30px 15px 30px 15px;
         }
 
         .offer-picture {

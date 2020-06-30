@@ -377,7 +377,7 @@ select {
 
 .contact-box {
   color: #B8B8BF;
-  font-size: 15px;
+  font-size: 13px;
   text-align: left;
 }
 
@@ -492,7 +492,7 @@ svg:hover {
   font-size: 1.2em;
   color: #BF8034;
   letter-spacing: 2px;
-  margin: 30px auto 30px auto;
+  margin: 30px 15px 30px 15px;
 }
 
 .offer section .offer-picture {
