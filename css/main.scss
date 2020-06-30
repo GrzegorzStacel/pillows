@@ -668,7 +668,20 @@ svg {
             width: 40%;
         }
 
-        
+        .start-pic-container{
+            width: 100%;
+            background: $color-gray;
+
+            .start-img{
+                
+                img{
+                    margin: 0 auto;
+                    width: 600px;
+                    border: 2px solid $color-orange;
+                    border-top: none;
+                }
+            }
+        }
     }
 
     .box {
@@ -748,3 +761,4 @@ svg {
         }
     }
 }
+

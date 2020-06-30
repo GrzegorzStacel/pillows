@@ -624,6 +624,16 @@ svg:hover {
   header ul {
     width: 40%;
   }
+  header .start-pic-container {
+    width: 100%;
+    background: #6A6A73;
+  }
+  header .start-pic-container .start-img img {
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #BF8034;
+    border-top: none;
+  }
   .box {
     width: 100%;
     margin: 60px 0px 0px 0px;
