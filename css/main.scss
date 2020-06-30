@@ -548,3 +548,195 @@ svg {
     text-align: left;
     margin-top: 50px;
 }
+
+@media only screen and (min-width: 375px) {
+    .call img {
+        width: 200%;
+    }
+}
+
+@media only screen and (min-width: 425px) {
+
+    .call {
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        img {
+            width: 190%;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        a {
+            padding: 20px;
+        }
+    }
+
+    .container {
+        padding: 0 2.5em;
+    }
+
+    .contact-box {
+        font-size: 17px;
+
+        .h2-size {
+            font-size: 22px;
+        }
+    }
+
+    .box {
+        padding-bottom: 60px !important;
+
+        h1 {
+            font-size: 2.2em;
+            padding-bottom: 20px;
+        }
+
+        picture {
+            width: 95%;
+        }
+    }
+
+    label {
+        font-size: 1.1em;
+    }
+
+    .offer {
+        p {
+            text-align: left;
+            font-size: 1em;
+        }
+
+        section {
+            h2 {
+                font-size: 1.6em;
+                margin: 40px 15px;
+            }
+
+            .offer-box {
+                .title-offer {
+                    font-size: 1.1em;
+                }
+
+                .property-offer {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    .about p {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .box h1{
+        font-size: 2.4em;
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+
+    .container {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    header {
+        .bam {
+            border-bottom: none;
+
+            .logo-caption{
+                font-size: 1.3em;
+            }
+        }
+
+        ul {
+            width: 40%;
+        }
+
+        
+    }
+
+    .box {
+        width: 100%;
+        margin: 60px 0px 0px 0px;
+        padding: 0;
+    }
+
+    .contact-box {
+        font-size: 19px;
+
+        .h2-size {
+            padding: 30px;
+            font-size: 24px;
+        }
+
+        .title-data-color{
+            width: 100px;
+        }
+    }
+
+    footer{
+        font-size: 0.9em;
+    }
+
+    .contact-form input[type="submit"]{
+        width: calc(100% - 300px);
+    }
+
+    .call{
+        padding-bottom: 80px;
+
+        h1{
+            font-size: 2.5em;
+            padding: 80px 40px 40px 40px;
+            text-align: left;
+        }
+
+        p{
+            font-size: 1.2em;
+            padding: 40px 40px 80px;
+        }
+
+        img{
+            width: 130%;        
+        }
+
+        a{
+            float: left;
+            margin-left: 40px;
+        }
+    } 
+
+    .offer{
+        p{
+            font-size: 1.1em;
+        }
+
+        section{
+            padding: 0 50px 50px;
+
+            h2{
+                font-size: 2.1em;
+            }
+
+            .offer-box{
+                margin: 15px 40px;
+
+                .title-offer{
+                    font-size: 1.3em;
+                }
+
+                .property-offer{
+                    font-size: 1.4em;
+                }
+            }
+        }
+    }
+}
