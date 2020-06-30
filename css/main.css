@@ -328,7 +328,6 @@ article p {
   color: gray;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 0.9em;
 }
 
 .contact-form .inputField .filled {
