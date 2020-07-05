@@ -68,6 +68,10 @@ header .bam .logo-caption {
   font-weight: bold;
 }
 
+header .bam .logo-caption span {
+  color: #BF8034;
+}
+
 header .bam .menu {
   width: 30px;
 }
@@ -89,7 +93,7 @@ header ul a {
   color: white;
   display: block;
   width: 100%;
-  padding: 1em 2em;
+  padding: 1em 1em;
   font-size: 1.2em;
   font-weight: bold;
   letter-spacing: 5px;
@@ -610,6 +614,12 @@ svg:hover {
   }
 }
 
+@media only screen and (min-width: 600px) {
+  header ul a {
+    padding: 1em 3.5em;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .box h1 {
     font-size: 2.4em;
@@ -738,6 +748,9 @@ svg:hover {
     float: left;
     width: 80px;
     padding-right: 20px;
+  }
+  header .bam ul li.li-big {
+    width: 185px;
   }
   header .bam ul li:last-child {
     padding-right: 0px;
