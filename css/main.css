@@ -100,7 +100,7 @@ header ul a:hover {
 }
 
 header ul a.activ {
-  color: #BF8034;
+  color: #BF8034 !important;
   text-decoration: underline;
 }
 
@@ -185,7 +185,7 @@ header .start-img img {
 .call p {
   text-align: left;
   color: white;
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding-top: 30px;
   padding-bottom: 50px;
   margin: 0;
@@ -223,11 +223,16 @@ header .start-img img {
   border-bottom: 2px solid #BF8034;
 }
 
-.box h1 {
-  font-size: 2em;
+.box .start-title {
+  margin-bottom: 60px;
 }
 
-.box picture {
+.box h1 {
+  font-size: 2em;
+  padding-bottom: 0px;
+}
+
+.box a picture {
   margin: 0 auto;
   margin-top: 30px;
   display: block;
@@ -235,15 +240,11 @@ header .start-img img {
   text-align: center;
 }
 
-.box picture img {
+.box a picture img {
   vertical-align: top;
   width: 100%;
   border-radius: 15px;
   border: 1px solid #BF8034;
-}
-
-.box picture:first-of-type {
-  margin-top: 60px;
 }
 
 .contact-form {
@@ -463,7 +464,7 @@ svg:hover {
 
 .offer h1 {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 35px;
 }
 
 .offer p {
@@ -490,8 +491,6 @@ svg:hover {
 }
 
 .offer section:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
   -webkit-box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15);
           box-shadow: 0 20px 30px 0 rgba(191, 128, 52, 0.1), 0 4px 4px 0 rgba(191, 128, 52, 0.15);
 }
@@ -507,8 +506,14 @@ svg:hover {
   margin: 30px 15px 30px 15px;
 }
 
-.offer section .offer-picture {
+.offer section .lightbox-offer .offer-picture, .offer section .offer-picture {
   margin-top: auto;
+}
+
+.offer section .lightbox-offer .offer-picture img, .offer section .offer-picture img {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #BF8034;
 }
 
 .offer section .offer-box {
@@ -580,7 +585,7 @@ svg:hover {
     font-size: 2.2em;
     padding-bottom: 20px;
   }
-  .box picture {
+  .box a picture {
     width: 95%;
   }
   label {
@@ -639,12 +644,16 @@ svg:hover {
     margin: 60px 0px 0px 0px;
     padding: 0;
   }
+  .box a picture {
+    width: 100%;
+  }
   .contact-box {
     font-size: 19px;
   }
   .contact-box .h2-size {
-    padding: 30px;
+    padding-top: 30px;
     font-size: 24px;
+    text-align: left;
   }
   .contact-box .title-data-color {
     width: 100px;
@@ -673,24 +682,148 @@ svg:hover {
   .call a {
     float: left;
     margin-left: 40px;
+    padding: 22px;
+    font-size: 1.1em;
   }
   .offer p {
     font-size: 1.1em;
   }
   .offer section {
     padding: 0 50px 50px;
+    margin: 60px 60px 30px 60px;
   }
   .offer section h2 {
     font-size: 2.1em;
-  }
-  .offer section .offer-box {
-    margin: 15px 40px;
   }
   .offer section .offer-box .title-offer {
     font-size: 1.3em;
   }
   .offer section .offer-box .property-offer {
     font-size: 1.4em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 900px;
+    margin: 0 auto;
+  }
+  .show-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto 13% auto;
+  }
+  .hide-desktop {
+    display: none;
+  }
+  header .start-pic-container .start-img img {
+    width: 900px;
+  }
+  header .bam {
+    padding: 10px 0px;
+  }
+  header .bam .logo-caption {
+    margin: 0px auto 0px 0px;
+    padding-left: 20px;
+  }
+  header .bam ul {
+    position: inherit;
+    background: none;
+    display: inline;
+    padding-top: 0;
+    padding: 0;
+  }
+  header .bam ul li {
+    float: left;
+    width: 80px;
+    padding-right: 20px;
+  }
+  header .bam ul li:last-child {
+    padding-right: 0px;
+  }
+  header .bam ul li a {
+    display: inline;
+    color: #000;
+    letter-spacing: normal;
+    padding: 0;
+    background: initial;
+  }
+  header .bam ul li a:hover {
+    text-decoration: underline;
+    color: #BF8034;
+  }
+  .call img {
+    width: 100%;
+  }
+  .box {
+    padding-bottom: 100px !important;
+  }
+  .box h1 {
+    padding-top: 100px;
+  }
+  .box .gallery:nth-child(even) picture {
+    margin-right: 30px;
+  }
+  .box .gallery picture {
+    width: 43%;
+    display: inline-block;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    margin-top: 30px;
+  }
+  .box .gallery picture:hover {
+    -webkit-transform: scale(1.01);
+            transform: scale(1.01);
+  }
+  .box .title {
+    text-align: left;
+    padding-top: 100px;
+  }
+  .contact-box {
+    margin: 0 auto;
+    font-size: 22px;
+  }
+  .contact-box .h2-size {
+    padding: 70px 0 25px 0;
+    font-size: 30px;
+  }
+  .contact-form input[type="submit"] {
+    width: 30%;
+  }
+  .offer h1 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  .offer section {
+    width: 37.5%;
+    display: inline-block;
+    margin: auto;
+  }
+  .offer section:last-of-type {
+    margin-top: 60px;
+    margin-left: 15px;
+  }
+  .offer section .offer-box {
+    width: 100%;
+    margin: 15px 0px 15px 0px;
+    height: 90px;
+  }
+  .offer section .offer-box:first-child {
+    margin-top: 30px;
+  }
+  .offer section .offer-box:last-child {
+    height: 180px;
+  }
+  .offer section .offer-box .title-offer {
+    padding-top: 15px;
+    padding-left: 15px;
+  }
+  .offer section .offer-box.size-1 {
+    height: 120px;
+  }
+  .offer section .offer-box.size-2 {
+    height: 150px;
   }
 }
 /*# sourceMappingURL=main.css.map */
