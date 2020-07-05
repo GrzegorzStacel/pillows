@@ -644,7 +644,7 @@ svg {
 
 @media only screen and (min-width: 768px) {
 
-    .box h1{
+    .box h1 {
         font-size: 2.4em;
         padding-top: 70px;
         padding-bottom: 30px;
@@ -659,7 +659,7 @@ svg {
         .bam {
             border-bottom: none;
 
-            .logo-caption{
+            .logo-caption {
                 font-size: 1.3em;
             }
         }
@@ -668,13 +668,13 @@ svg {
             width: 40%;
         }
 
-        .start-pic-container{
+        .start-pic-container {
             width: 100%;
             background: $color-gray;
 
-            .start-img{
-                
-                img{
+            .start-img {
+
+                img {
                     margin: 0 auto;
                     width: 600px;
                     border: 2px solid $color-orange;
@@ -688,73 +688,80 @@ svg {
         width: 100%;
         margin: 60px 0px 0px 0px;
         padding: 0;
+
+        a picture{
+            width: 100%;
+        }
     }
 
     .contact-box {
         font-size: 19px;
 
         .h2-size {
-            padding: 30px;
+            padding-top: 30px;
             font-size: 24px;
+            text-align: left;
         }
 
-        .title-data-color{
+        .title-data-color {
             width: 100px;
         }
     }
 
-    footer{
+    footer {
         font-size: 0.9em;
     }
 
-    .contact-form input[type="submit"]{
+    .contact-form input[type="submit"] {
         width: calc(100% - 300px);
     }
 
-    .call{
+    .call {
         padding-bottom: 80px;
 
-        h1{
+        h1 {
             font-size: 2.5em;
             padding: 80px 40px 40px 40px;
             text-align: left;
         }
 
-        p{
+        p {
             font-size: 1.2em;
             padding: 40px 40px 80px;
         }
 
-        img{
-            width: 130%;        
+        img {
+            width: 130%;
         }
 
-        a{
+        a {
             float: left;
             margin-left: 40px;
+            padding: 22px;
+            font-size: 1.1em;
         }
-    } 
+    }
 
-    .offer{
-        p{
+    .offer {
+        p {
             font-size: 1.1em;
         }
 
-        section{
+        section {
             padding: 0 50px 50px;
+            margin: 60px 60px 30px 60px;
 
-            h2{
+            h2 {
                 font-size: 2.1em;
             }
 
-            .offer-box{
-                margin: 15px 40px;
+            .offer-box {
 
-                .title-offer{
+                .title-offer {
                     font-size: 1.3em;
                 }
 
-                .property-offer{
+                .property-offer {
                     font-size: 1.4em;
                 }
             }
