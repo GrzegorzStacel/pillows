@@ -91,7 +91,6 @@ header {
             display: block;
             width: 100%;
             padding: 1em 2em;
-            // background: rgb(52, 59, 63);
             font-size: 1.2em;
             font-weight: bold;
             letter-spacing: 5px;
@@ -101,7 +100,7 @@ header {
             }
 
             &.activ {
-                color: $color-orange;
+                color: $color-orange !important;
                 text-decoration: underline;
 
             }
@@ -186,7 +185,7 @@ header {
     p {
         text-align: left;
         color: white;
-        font-size: 0.7em;
+        font-size: 0.8em;
         padding-top: 30px;
         padding-bottom: 50px;
         margin: 0;
@@ -226,30 +225,30 @@ header {
 }
 
 .box {
+    .start-title {
+        margin-bottom: 60px;
+    }
 
     h1 {
         font-size: 2em;
+        padding-bottom: 0px;
     }
 
-    picture {
-        margin: 0 auto;
-        margin-top: 30px;
-        display: block;
-        width: 90%;
-        text-align: center;
+    a {
+        picture {
+            margin: 0 auto;
+            margin-top: 30px;
+            display: block;
+            width: 90%;
+            text-align: center;
 
-        img {
-            vertical-align: top;
-            width: 100%;
-            border-radius: 15px;
-            border: 1px solid $color-orange;
+            img {
+                vertical-align: top;
+                width: 100%;
+                border-radius: 15px;
+                border: 1px solid $color-orange;
+            }
         }
-
-        &:first-of-type {
-            margin-top: 60px;
-        }
-
-
     }
 }
 
@@ -472,7 +471,7 @@ svg {
 
     h1 {
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 35px;
     }
 
     p {
@@ -497,7 +496,6 @@ svg {
         padding: 0px 15px 30px 15px;
 
         &:hover {
-            transform: scale(1.01);
             box-shadow:
                 0 20px 30px 0 rgba($color-orange, .1),
                 0 4px 4px 0 rgba($color-orange, .15);
@@ -515,8 +513,14 @@ svg {
             margin: 30px 15px 30px 15px;
         }
 
-        .offer-picture {
+        .lightbox-offer .offer-picture, .offer-picture {
             margin-top: auto;
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+                border: 1px solid $color-orange;
+            }
         }
 
         .offer-box {
@@ -548,7 +552,6 @@ svg {
 }
 
 .about p {
-    // color: white;
     color: $color-light-gray;
     font-size: 0.9em;
     line-height: 20px;
@@ -604,7 +607,7 @@ svg {
             padding-bottom: 20px;
         }
 
-        picture {
+        a picture {
             width: 95%;
         }
     }
