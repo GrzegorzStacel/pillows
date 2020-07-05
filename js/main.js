@@ -23,6 +23,12 @@ CONTACT.addEventListener('click', function (e) {
  NAV.classList.toggle('hide-mobile');
 });
 
+// Lightbox configuration
+lightbox.option({
+    'disableScrolling': true
+})
+  
+
 function input_filleed() {
     // const input = document.querySelector('.inputField input');
 
