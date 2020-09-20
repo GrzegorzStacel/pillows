@@ -33,6 +33,7 @@ The website contains full RWD
 * PHP
 * JavaScript
 * jQuery
+* SCSS
 
 ### Extensions
 * lightbox2
