@@ -1,16 +1,44 @@
-# Pillows
+# #4 Pillows
+> This is my fourth pillow manufacturer website.
+>
+> [Pillows](http://www.poduszki-ttex.pl/)
 
-This is my 4 # fourth website.
-This is a company website with an offer of sleeping pillows.
-I designed it according to the guidelines and made it 100% independently.
-I used jQuery library and lightbox2 in it.
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Status](#status)
+* [Contact](#contact)
 
-poduszki-ttex.pl/
------------------------------------------------------------------------------------------------------------------------------------------
+## General info
+I designed and made it 100% personally.
+The project was developed according to detailed guidelines.
 
-To jest moja 4# czwarta strona internetowa.
-Jest to strona firmowa z ofertą poduszek do spania.
-Zaprojektowałem ją według wytycznych i wykonałem w 100% samodzielnie.
-Wykorzystałem w niej biblioteki jQuery oraz lightbox2.
+The website contains full RWD
 
-poduszki-ttex.pl/
+## Screenshots
+![Example screenshot](./img_readme/1.png)
+
+***
+
+![Example screenshot](./img_readme/2.png)
+
+***
+
+![Example screenshot](./img_readme/3.png)
+
+## Technologies
+* CSS - version 3
+* HTML - version 5
+* PHP
+* JavaScript
+* jQuery
+
+### Extensions
+* lightbox2
+
+## Status
+Project is: _finished_
+
+## Contact
+Created by [@Grzegorz Stącel](mailto:stacelgrzegorz@gmail.com) - feel free to contact me!
