@@ -36,7 +36,7 @@ The website contains full RWD
 * SCSS
 
 ### Extensions
-* lightbox2
+* [lightbox2](https://lokeshdhakar.com/projects/lightbox2/)
 
 ## Status
 Project is: _finished_
